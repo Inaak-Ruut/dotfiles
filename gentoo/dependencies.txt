@@ -27,7 +27,9 @@ app-editors/neovim
 # app-office/libreoffice
 www-client/vivaldi
 media-sound/mpd
+
 # Fonts
+
 media-fonts/fira-code
 media-fonts/roboto
 media-fonts/noto
