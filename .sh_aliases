@@ -1,0 +1,37 @@
+#
+# ~/.sh_aliases
+#
+
+# Various administration aliases
+
+alias ls="ls -laH --color=auto --group-directories-first"
+# alias ranger="ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR""
+alias reload="source ~/.bashrc"
+
+# Make ranger exit in the latest directory you were in
+
+alias ranger='ranger --choosedir=$XDG_CONFIG_HOME/ranger/.rangerdir; LASTDIR=`cat $XDG_CONFIG_HOME/.rangerdir`; cd "$LASTDIR"'
+
+# Useful system maintenance aliases
+
+alias orphans='yay -Rns $(pacman -Qtdq)'
+alias update='sudo pacman-mirrors --fasttrack && yay -Syyu'
+
+# Editing config files
+
+alias bashrc="nvim $HOME/.bashrc"
+alias vimrc="nvim $XDG_CONFIG_HOME/nvim/init.vim"
+alias zprof="nvim $HOME/.zprofile"
+alias zenv="nvim $HOME/.zshenv"
+
+
+# Various navigation aliases
+
+alias epub="cd /home/przemio/MEGA/MEGAsync/epub/ && ls -laH"
+alias litir="cd /home/przemio/MEGA/MEGAsync/epub/Celtic/Gaelic/Litir/ && ls -laH"
+alias pers="cd /home/przemio/MEGA/MEGAsync/epub/Perski/ && ls -laH"
+alias home="cd /home/przemio/"
+
+# Useful temporary edit aliases
+
+alias rom="nvim /home/przemio/MEGA/MEGAsync/epub/Romance/Rumuński/rom.xhtml"

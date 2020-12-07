@@ -1,0 +1,20 @@
+eno1
+
+wlp3s0
+
+# server configuration
+
+x11-libs/libX11
+x11-base/xorg-drivers
+x11-base/xorg-server
+x11-libs/libXrandr
+x11-libs/libXft
+x11-apps/xinit
+x11-apps/xrdb
+x11-apps/mesa-progs
+x11-apps/xrandr
+x11-drivers/nvidia-drivers
+x11-misc/unclutter
+x11-misc/xclip
+
+unset nvidia 
