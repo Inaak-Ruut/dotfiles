@@ -1,0 +1,54 @@
+# /etc/fstab: static file system information.
+#
+# noatime turns off atimes for increased performance (atimes normally aren't 
+# needed); notail increases performance of ReiserFS (at the expense of storage 
+# efficiency).  It's safe to drop the noatime options if you want and to 
+# switch between notail / tail freely.
+#
+# The root filesystem should have a pass number of either 0 or 1.
+# All other filesystems should have a pass number of 0 or greater than 1.
+#
+# See the manpage fstab(5) for more information.
+#
+
+# <fs>			<mountpoint>	<type>		<opts>		<dump/pass>
+
+# NOTE: If your BOOT partition is ReiserFS, add the notail option to opts.
+#
+# NOTE: Even though we list ext4 as the type here, it will work with ext2/ext3
+#       filesystems.  This just tells the kernel to use the ext4 driver.
+#
+# NOTE: You can use full paths to devices like /dev/sda3, but it is often
+#       more reliable to use filesystem labels or UUIDs. See your filesystem
+#       documentation for details on setting a label. To obtain the UUID, use
+#       the blkid(8) command.
+
+#LABEL=boot		/boot		ext4		noauto,noatime	1 2
+#UUID=58e72203-57d1-4497-81ad-97655bd56494		/		ext4		noatime		0 1
+#LABEL=swap		none		swap		sw		0 0
+#/dev/cdrom		/mnt/cdrom	auto		noauto,ro	0 0
+
+# /dev/sda1: 
+UUID=a4e198c7-bc9a-47e0-8143-63b95e7f72df               	/boot           		ext2		noatime,discard										0	2	 
+
+# /dev/sda2:
+UUID=42c1623b-79a7-42b5-a714-d7b9fa590edf			/				ext4		noatime,discard										0	1
+
+
+# /dev/sda4:
+UUID=f5b62037-8f1a-4d0a-9046-4acbb6e50004			/home				ext4		noatime,discard										0	2
+
+
+# /dev/sda6:
+UUID=8077be85-77de-4823-bac1-822eb02f390e			none				swap		sw											0	0
+
+# tmpfs
+tmpfs								/var/tmp/			tmpfs		rw,nosuid,noatime,nodev,size=4G,mode=1777						0	0
+
+# tmpfs (portage)
+tmpfs								/var/tmp/portage		tmpfs		rw,nosuid,noatime,nodev,size=4G,mode=775,uid=portage,gid=portage,x-mount.mkdir=775	0	0
+
+
+
+# /dev/sda3: UUID="d9f636b8-9467-4621-812d-f47b128e0912" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="6fead280-54d5-5d45-a7ef-3d4e6ea250a8"
+# /dev/sda5: UUID="29c05842-995c-4366-81a3-6e72bbdb4977" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="e12734a3-ab68-7742-8734-e5bf18558046"
