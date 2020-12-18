@@ -1,7 +1,23 @@
-	alias ls="ls --color=auto"
-	alias dir="dir --color=auto"
-	alias grep="grep --color=auto"
-	alias dmesg='dmesg --color'
+alias ls="ls --color=auto"
+alias dir="dir --color=auto"
+alias grep="grep --color=auto"
+alias dmesg='dmesg --color'
+
+# Colourised less output
+cless() {
+  case "$1" in
+      *.md) glow -s dark "$1" | less -r;;
+      *) highlight -O ansi "$1" --force | less -r;;
+  esac
+}
+
+# Colourized cat output
+ccat() {
+  case "$1" in
+      *.md) glow -s dark "$1";;
+      *) highlight -O ansi "$1" --force;;
+  esac
+}
 
 # Set colorful PS1 only on colorful terminals.
 # dircolors --print-database uses its own built-in database

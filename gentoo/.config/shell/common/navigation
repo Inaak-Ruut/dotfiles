@@ -1,0 +1,4 @@
+alias etp="cd /etc/portage && ls"
+alias epu="cd /etc/portage/package.use && ls"
+alias epm="cd /etc/portage/package.mask && ls"
+alias conf"cd ${XDB_CONFIG_HOME} && ls"
