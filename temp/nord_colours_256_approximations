@@ -1,0 +1,29 @@
+Hex Values              Closest 256          nord_designation            Description  
+                        Approximation                                    
+-----------------------------------------------------------------------------------------------
+Dark Grey                               
+
+#2E3440                 23                   nord_0                      (darkest grey)
+#3B4252                 59                   nord_1                      (dark grey)
+#434C5E                 59                   nord_2                      (medium dark grey)
+#4C566A                 59                   nord_3                      (lighter grey)
+
+Light Grey
+
+#D8DEE9                 188                  nord_4                      (strongest light grey)
+#E5E9F0                 189                  nord_5                      (medium light grey)
+#ECEFF4                 231                  nord_6                      (off-white)
+
+Blue to Teal               
+
+#8FBCBB                 109                  nord_7                      (frozen polar water)               
+#88C0D0                 110                  nord_8                      (pure and clear ice)             
+#81A1C1                 109                  nord_9                      (arctic waters)             
+#5E81AC                 67                   nord_10                     (deep arctic ocean)
+
+
+#BF616A                 131                  nord_11                      (red)
+#D08770                 173                  nord_12                      (orange)
+#EBCB8B                 222                  nord_13                      (yellow)
+#A3BE8C                 144                  nord_14                      (green)
+#B48EAD                 139                  nord_15                      (magenta)
