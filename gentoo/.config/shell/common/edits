@@ -1,4 +1,0 @@
-alias brc="nvim $XDG_CONFIG_HOME/shell/bash/.bashrc"
-alias zrc="nvim $XDG_CONFIG_HOME/shell/zsh/.zshrc"
-alias emc="nvim /etc/portage/make.conf"
-alias epr="nvim $HOME/.profile"
