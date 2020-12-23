@@ -1,0 +1,6 @@
+alias mkdir="mkdir -p"                    # create directories recursively
+alias rm="rm -i"                          # confirm before overwriting something
+alias cp="cp -i"                          # confirm before overwriting something
+alias df='df -h'                          # human-readable sizes
+alias free='free -m'                      # show sizes in MB
+alias more=less
