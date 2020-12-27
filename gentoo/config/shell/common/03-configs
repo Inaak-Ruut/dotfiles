@@ -1,0 +1,8 @@
+alias brc="nvim $XDG_CONFIG_HOME/shell/bash/.bashrc"
+alias zrc="nvim $XDG_CONFIG_HOME/shell/zsh/.zshrc"
+alias emc="nvim /etc/portage/make.conf"
+alias epr="nvim $HOME/.profile"
+alias xup='xrdb .Xresources'
+alias sr='source $XDG_CONFIG_HOME/shell/bash/.bashrc'
+alias sc='source $XDG_CONFIG_HOME/shell/zsh/.zshrc'
+alias sp='source $XDG_CONFIG_HOME/shell/zsh/.zprofile'

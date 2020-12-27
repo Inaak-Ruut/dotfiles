@@ -1,0 +1,94 @@
+# --- special colors ---
+
+[Background]
+Color=51,51,51
+RGB 333333 -> xterm color approx 59 (5f5f5f)
+
+[BackgroundIntense]
+Color=51,51,51
+RGB 333333 -> xterm color approx 59 (5f5f5f)
+
+[Foreground]
+Color=242,242,242
+RGB F2F2F2 -> xterm color approx 231 (ffffff)
+
+[ForegroundIntense]
+Color=115,196,143
+RGB 73C48F -> xterm color approx 114 (87d787)
+Bold=true
+
+# --- standard colors ---
+
+[Color0]
+Color=51,51,51
+RGB 333333 -> xterm color approx 59 (5f5f5f)
+
+[Color0Intense]
+Color=136,128,124
+RGB 88807C -> xterm color approx 102 (878787)
+
+[Color1]
+Color=204,0,0
+RGB CC0000 -> xterm color approx 160 (d70000)
+
+[Color1Intense]
+Color=241,93,34
+RGB F15D22 -> xterm color approx 202 (ff5f00)
+
+[Color2]
+Color=78,154,6
+RGB 4E9A06 -> xterm color approx 64 (5f8700)
+
+[Color2Intense]
+Color=115,196,143
+RGB 73C48F -> xterm color approx 114 (87d787)
+
+[Color3]
+Color=196,160,0
+RGB C4A000 -> xterm color approx 178 (d7af00)
+
+[Color3Intense]
+Color=255,206,81
+RGB FFCE51 -> xterm color approx 221 (ffd75f)
+
+[Color4]
+Color=52,101,164
+RGB 3465A4 -> xterm color approx 61 (5f5faf)
+
+
+[Color4Intense]
+Color=72,185,199
+RGB 48B9C7 -> xterm color approx 74 (5fafd7)
+
+[Color5]
+Color=117,80,123
+RGB 75507B -> xterm color approx 96 (875f87)
+
+[Color5Intense]
+Color=173,127,168
+RGB AD7FA8 -> xterm color approx 139 (af87af)
+
+[Color6]
+Color=6,152,154
+RGB 06989A -> xterm color approx 30 (008787)
+
+
+[Color6Intense]
+Color=52,226,226
+RGB 34E2E2 -> xterm color approx 80 (5fd7d7)
+
+[Color7]
+Color=211,215,207
+RGB D3D7CF -> xterm color approx 188 (d7d7d7)
+
+[Color7Intense]
+Color=238,238,236
+RGB EEEEEC -> xterm color approx 231 (ffffff)
+
+# --- general options ---
+
+[General]
+Description=Pop!_OS
+Opacity=0.7
+Wallpaper=
+
