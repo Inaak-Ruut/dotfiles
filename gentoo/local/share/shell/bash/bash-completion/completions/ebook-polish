@@ -1,0 +1,66 @@
+_ebook_polish()
+{
+    local cur prev opts
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+    opts="--version -h --help -e --embed-fonts -f --subset-fonts -c --cover -o --opf -j --jacket --remove-jacket -p --smarten-punctuation -u --remove-unused-css -i --compress-images -H --add-soft-hyphens --remove-soft-hyphens -U --upgrade-book --verbose"
+    pics="@(BMP|GIF|JPEG|JPG|PNG|bmp|gif|jpeg|jpg|png)"
+
+    case "${prev}" in
+      --cover )
+           _filedir ${pics}
+           return 0
+         ;;
+    
+      -c )
+           _filedir ${pics}
+           return 0
+         ;;
+    
+      --opf )
+           _filedir '@(opf)'
+           return 0
+         ;;
+    
+      -o )
+           _filedir '@(opf)'
+           return 0
+         ;;
+    
+    esac
+
+    case "${cur}" in
+      --cover )
+           _filedir ${pics}
+           return 0
+         ;;
+    
+      -c )
+           _filedir ${pics}
+           return 0
+         ;;
+    
+      --opf )
+           _filedir '@(opf)'
+           return 0
+         ;;
+    
+      -o )
+           _filedir '@(opf)'
+           return 0
+         ;;
+    
+      -* )
+         COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+         return 0
+         ;;
+      *  )
+        _filedir '@(AZW3|EPUB|azw3|epub)'
+        return 0
+        ;;
+    esac
+
+}
+complete -o filenames -F _ebook_polish ebook-polish
+

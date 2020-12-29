@@ -1,0 +1,25 @@
+_calibre_smtp()
+{
+    local cur opts
+    local IFS=$'|\t'
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    opts="--version|-h|--help|-l|--localhost|-o|--outbox|-f|--fork|-t|--timeout|-v|--verbose|-a|--attachment|-s|--subject|-r|--relay|--port|-u|--username|-p|--password|-e|--encryption-method|--dont-verify-server-certificate|--cafile"
+    words=""
+
+    case "${cur}" in
+      -* )
+         COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+         COMPREPLY=( $( echo ${COMPREPLY[@]} | sed 's/ /\\ /g' | tr '\n' '\t' ) )
+         return 0
+         ;;
+      *  )
+         COMPREPLY=( $(compgen -W "${words}" -- ${cur}) )
+         COMPREPLY=( $( echo ${COMPREPLY[@]} | sed 's/ /\\ /g' | tr '\n' '\t' ) )
+         return 0
+         ;;
+    esac
+
+}
+complete -F _calibre_smtp calibre-smtp
+

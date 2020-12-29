@@ -1,0 +1,36 @@
+_ebook_viewer()
+{
+    local cur prev opts
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+    opts="--version -h --help --raise-window -f --full-screen --fullscreen --force-reload --open-at --continue --detach"
+    pics="@(BMP|GIF|JPEG|JPG|PNG|bmp|gif|jpeg|jpg|png)"
+
+    case "${prev}" in
+      --cover )
+           _filedir ${pics}
+           return 0
+         ;;
+    
+    esac
+
+    case "${cur}" in
+      --cover )
+           _filedir ${pics}
+           return 0
+         ;;
+    
+      -* )
+         COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+         return 0
+         ;;
+      *  )
+        _filedir '@(AZW|AZW3|AZW4|CBC|CBR|CBZ|CHM|DJV|DJVU|DOCM|DOCX|DOWNLOADED_RECIPE|EPUB|FB2|FBZ|HTM|HTML|HTMLZ|LIT|LRF|MARKDOWN|MD|MOBI|ODT|OPF|PDB|PDF|PML|PMLZ|POBI|PRC|RB|RECIPE|RTF|SHTM|SHTML|SNB|TCR|TEXT|TEXTILE|TXT|TXTZ|UPDB|XHTM|XHTML|azw|azw3|azw4|cbc|cbr|cbz|chm|djv|djvu|docm|docx|downloaded_recipe|epub|fb2|fbz|htm|html|htmlz|lit|lrf|markdown|md|mobi|odt|opf|pdb|pdf|pml|pmlz|pobi|prc|rb|recipe|rtf|shtm|shtml|snb|tcr|text|textile|txt|txtz|updb|xhtm|xhtml)'
+        return 0
+        ;;
+    esac
+
+}
+complete -o filenames -F _ebook_viewer ebook-viewer
+

@@ -1,0 +1,36 @@
+_calibre()
+{
+    local cur prev opts
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+    opts="--version -h --help --with-library --start-in-tray -v --verbose --no-update-check --ignore-plugins -s --shutdown-running-calibre --detach"
+    pics="@(BMP|GIF|JPEG|JPG|PNG|bmp|gif|jpeg|jpg|png)"
+
+    case "${prev}" in
+      --cover )
+           _filedir ${pics}
+           return 0
+         ;;
+    
+    esac
+
+    case "${cur}" in
+      --cover )
+           _filedir ${pics}
+           return 0
+         ;;
+    
+      -* )
+         COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+         return 0
+         ;;
+      *  )
+        _filedir '@(AZW|AZW1|AZW3|AZW4|BOOK|CBC|CBR|CBZ|CHM|DJV|DJVU|DOC|DOCM|DOCX|EPUB|FB2|FBZ|HTM|HTML|HTMLZ|IBA|IBOOK|IBOOKS|IMP|KEPUB|KFX|KPF|LIT|LRF|LRX|MARKDOWN|MBP|MD|MOBI|ODT|OEBZIP|OXPS|PDB|PDF|PDR|PML|PMLZ|POBI|PRC|PS|RAR|RB|RTF|SNB|TAN|TEXT|TEXTILE|TPZ|TXT|TXTZ|UPDB|XHTM|XHTML|XPS|ZBF|ZIP|azw|azw1|azw3|azw4|book|cbc|cbr|cbz|chm|djv|djvu|doc|docm|docx|epub|fb2|fbz|htm|html|htmlz|iba|ibook|ibooks|imp|kepub|kfx|kpf|lit|lrf|lrx|markdown|mbp|md|mobi|odt|oebzip|oxps|pdb|pdf|pdr|pml|pmlz|pobi|prc|ps|rar|rb|rtf|snb|tan|text|textile|tpz|txt|txtz|updb|xhtm|xhtml|xps|zbf|zip)'
+        return 0
+        ;;
+    esac
+
+}
+complete -o filenames -F _calibre calibre
+

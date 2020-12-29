@@ -1,0 +1,25 @@
+_calibre_server()
+{
+    local cur opts
+    local IFS=$'|\t'
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    opts="--version|-h|--help|--ajax-timeout|--enable-allow-socket-preallocation|--disable-allow-socket-preallocation|--enable-auth|--disable-auth|--auth-mode|--ban-after|--ban-for|--book-list-mode|--compress-min-size|--displayed-fields|--enable-fallback-to-detected-interface|--disable-fallback-to-detected-interface|--ignored-fields|--listen-on|--enable-local-write|--disable-local-write|--enable-log-not-found|--disable-log-not-found|--max-header-line-size|--max-job-time|--max-jobs|--max-log-size|--max-opds-items|--max-opds-ungrouped-items|--max-request-body-size|--num-per-page|--port|--shutdown-timeout|--ssl-certfile|--ssl-keyfile|--timeout|--trusted-ips|--url-prefix|--enable-use-bonjour|--disable-use-bonjour|--enable-use-sendfile|--disable-use-sendfile|--userdb|--worker-count|--log|--access-log|--custom-list-template|--search-the-net-urls|--daemonize|--pidfile|--auto-reload|--manage-users"
+    words=""
+
+    case "${cur}" in
+      -* )
+         COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+         COMPREPLY=( $( echo ${COMPREPLY[@]} | sed 's/ /\\ /g' | tr '\n' '\t' ) )
+         return 0
+         ;;
+      *  )
+         COMPREPLY=( $(compgen -W "${words}" -- ${cur}) )
+         COMPREPLY=( $( echo ${COMPREPLY[@]} | sed 's/ /\\ /g' | tr '\n' '\t' ) )
+         return 0
+         ;;
+    esac
+
+}
+complete -F _calibre_server calibre-server
+

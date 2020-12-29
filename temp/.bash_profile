@@ -8,7 +8,7 @@
 # Default Programs
 #export NMON=cmknt
 export EDITOR="nvim"
-export PAGER="less"
+export PAGER="nvimpager"
 # export VISUAL="subl3"
 export BROWSER="vivaldi-stable"
 export BROWSERCLI="w3m"
@@ -18,7 +18,7 @@ export SNDPLAY="mpd"
 export TERMINAL="st"
 export PULSE_LATENCY_MSEC=60
 
-#export TERM="xterm-256color"
+export TERM="xterm-256color"
 
 # File Extensions
 for ext in org php com net no;    					do alias -s $ext=$BROWSER; done

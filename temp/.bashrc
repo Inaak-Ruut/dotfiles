@@ -12,14 +12,14 @@
 [[ $- != *i* ]] && return
 
 # Source configs
-for f in ~/.config/shell/common/*; do source "$f"; done
+for f in $XDG_DATA_HOME/shell/common/*; do source "$f"; done
 
 # Starship Prompt
 eval "$(starship init bash)"
 
 # Load bash-completion
 
-[ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
+[ -r $XDG_DATA_HOME/shell/common/bash/bash-completion/bash_completion ] && . $XDG_DATA_HOME/shell/common/bash/bash-completion/bash_completion
 
 PS1='\n[\u@\h]: \w\n$?> '
 
@@ -48,13 +48,13 @@ use_color=true
 
 # Color for manpages in less makes manpages a little easier to read:
 
-export LESS_TERMCAP_mb=$'\E[01;31m'
-export LESS_TERMCAP_md=$'\E[01;31m'
-export LESS_TERMCAP_me=$'\E[0m'
-export LESS_TERMCAP_se=$'\E[0m'
-export LESS_TERMCAP_so=$'\E[01;44;33m'
-export LESS_TERMCAP_ue=$'\E[0m'
-export LESS_TERMCAP_us=$'\E[01;32m'
+# export LESS_TERMCAP_mb=$'\E[01;31m'
+# export LESS_TERMCAP_md=$'\E[01;31m'
+# export LESS_TERMCAP_me=$'\E[0m'
+# export LESS_TERMCAP_se=$'\E[0m'
+# export LESS_TERMCAP_so=$'\E[01;44;33m'
+# export LESS_TERMCAP_ue=$'\E[0m'
+# export LESS_TERMCAP_us=$'\E[01;32m'
 
 xhost +local:root > /dev/null 2>&1
 

@@ -1,0 +1,36 @@
+_calibre_debug()
+{
+    local cur prev opts
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+    opts="--version -h --help -c --command -e --exec-file -f --subset-font -d --debug-device-driver -g --gui --gui-debug -w --viewer --paths --add-simple-plugin --reinitialize-db -m --inspect-mobi -t --edit-book -x --explode-book -i --implode-book --export-all-calibre-data --import-calibre-data -s --shutdown-running-calibre --test-build -r --run-plugin --diff --default-programs --fix-multiprocessing"
+    pics="@(BMP|GIF|JPEG|JPG|PNG|bmp|gif|jpeg|jpg|png)"
+
+    case "${prev}" in
+      --cover )
+           _filedir ${pics}
+           return 0
+         ;;
+    
+    esac
+
+    case "${cur}" in
+      --cover )
+           _filedir ${pics}
+           return 0
+         ;;
+    
+      -* )
+         COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+         return 0
+         ;;
+      *  )
+        _filedir '@(AZW|AZW3|DOCX|EPUB|MOBI|PY|RECIPE|azw|azw3|docx|epub|mobi|py|recipe)'
+        return 0
+        ;;
+    esac
+
+}
+complete -o filenames -F _calibre_debug calibre-debug
+

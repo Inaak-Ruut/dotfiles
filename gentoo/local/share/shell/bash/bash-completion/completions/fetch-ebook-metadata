@@ -1,0 +1,25 @@
+_fetch_ebook_metadata()
+{
+    local cur opts
+    local IFS=$'|\t'
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    opts="--version|-h|--help|-t|--title|-a|--authors|-i|--isbn|-I|--identifier|-v|--verbose|-o|--opf|-c|--cover|-d|--timeout|-p|--allowed-plugin"
+    words=""
+
+    case "${cur}" in
+      -* )
+         COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+         COMPREPLY=( $( echo ${COMPREPLY[@]} | sed 's/ /\\ /g' | tr '\n' '\t' ) )
+         return 0
+         ;;
+      *  )
+         COMPREPLY=( $(compgen -W "${words}" -- ${cur}) )
+         COMPREPLY=( $( echo ${COMPREPLY[@]} | sed 's/ /\\ /g' | tr '\n' '\t' ) )
+         return 0
+         ;;
+    esac
+
+}
+complete -F _fetch_ebook_metadata fetch-ebook-metadata
+

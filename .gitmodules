@@ -79,3 +79,15 @@
 [submodule "config/nvim/pack/syntax/start/yats.vim"]
 	path = config/nvim/pack/syntax/start/yats.vim
 	url = https://github.com/HerringtonDarkholme/yats.vim.git
+[submodule "git/suckless/dwm"]
+	path = git/suckless/dwm
+	url = https://github.com/suckless/dwm.git
+[submodule "git/suckless/dmenu"]
+	path = git/suckless/dmenu
+	url = https://github.com/suckless/dmenu.git
+[submodule "git/suckless/st"]
+	path = git/suckless/st
+	url = https://github.com/suckless/st.git
+[submodule "git/suckless/slstatus"]
+	path = git/suckless/slstatus
+	url = https://github.com/suckless/slstatus.git

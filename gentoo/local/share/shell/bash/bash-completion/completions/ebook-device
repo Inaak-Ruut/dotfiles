@@ -1,0 +1,70 @@
+_ebook_device_ls()
+{
+local pattern search listing prefix
+pattern="$1"
+search="$1"
+if [[ -n "{$pattern}" ]]; then
+    if [[ "${pattern:(-1)}" == "/" ]]; then
+    pattern=""
+    else
+    pattern="$(basename ${pattern} 2> /dev/null)"
+    search="$(dirname ${search} 2> /dev/null)"
+    fi
+fi
+
+if [[  "x${search}" == "x" || "x${search}" == "x." ]]; then
+    search="/"
+fi
+
+listing="$(ebook-device ls ${search} 2>/dev/null)"
+
+prefix="${search}"
+if [[ "x${prefix:(-1)}" != "x/" ]]; then
+    prefix="${prefix}/"
+fi
+
+echo $(compgen -P "${prefix}" -W "${listing}" "${pattern}")
+}
+
+_ebook_device()
+{
+local cur prev
+cur="${COMP_WORDS[COMP_CWORD]}"
+prev="${COMP_WORDS[COMP_CWORD-1]}"
+COMPREPLY=()
+case "${prev}" in
+    ls|rm|mkdir|touch|cat )
+        COMPREPLY=( $(_ebook_device_ls "${cur}") )
+        return 0
+        ;;
+    cp )
+        if [[ ${cur} == dev:* ]]; then
+        COMPREPLY=( $(_ebook_device_ls "${cur:7}") )
+        return 0
+        else
+        _filedir
+        return 0
+        fi
+        ;;
+    dev )
+        COMPREPLY=( $(compgen -W "cp ls rm mkdir touch cat info books df" "${cur}") )
+        return 0
+        ;;
+    * )
+        if [[ ${cur} == dev:* ]]; then
+        COMPREPLY=( $(_ebook_device_ls "${cur:7}") )
+        return 0
+        else
+        if [[ ${prev} == dev:* ]]; then
+            _filedir
+            return 0
+        else
+            COMPREPLY=( $(compgen -W "dev:" "${cur}") )
+            return 0
+        fi
+        return 0
+        fi
+    ;;
+esac
+}
+complete -o nospace  -F _ebook_device ebook-device

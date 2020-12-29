@@ -1,0 +1,66 @@
+_ebook_meta()
+{
+    local cur prev opts
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+    opts="--version -h --help -t --title -a --authors --title-sort --author-sort --cover -c --comments -p --publisher --category -s --series -i --index -r --rating --isbn --identifier --tags -k --book-producer -l --language -d --date --get-cover --to-opf --from-opf --lrf-bookid"
+    pics="@(BMP|GIF|JPEG|JPG|PNG|bmp|gif|jpeg|jpg|png)"
+
+    case "${prev}" in
+      --cover )
+           _filedir ${pics}
+           return 0
+         ;;
+    
+      -c )
+           _filedir ${pics}
+           return 0
+         ;;
+    
+      --to-opf )
+           _filedir '@(opf)'
+           return 0
+         ;;
+    
+      --from-opf )
+           _filedir '@(opf)'
+           return 0
+         ;;
+    
+    esac
+
+    case "${cur}" in
+      --cover )
+           _filedir ${pics}
+           return 0
+         ;;
+    
+      -c )
+           _filedir ${pics}
+           return 0
+         ;;
+    
+      --to-opf )
+           _filedir '@(opf)'
+           return 0
+         ;;
+    
+      --from-opf )
+           _filedir '@(opf)'
+           return 0
+         ;;
+    
+      -* )
+         COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+         return 0
+         ;;
+      *  )
+        _filedir '@(AZW|AZW1|AZW3|AZW4|CBR|CBZ|CHM|DOCX|EPUB|FB2|FBZ|HTML|HTMLZ|IMP|LIT|LRF|LRX|MOBI|ODT|OEBZIP|OPF|PDB|PDF|PML|PMLZ|POBI|PRC|RAR|RB|RTF|SNB|TPZ|TXT|TXTZ|UPDB|ZIP|azw|azw1|azw3|azw4|cbr|cbz|chm|docx|epub|fb2|fbz|html|htmlz|imp|lit|lrf|lrx|mobi|odt|oebzip|opf|pdb|pdf|pml|pmlz|pobi|prc|rar|rb|rtf|snb|tpz|txt|txtz|updb|zip)'
+        return 0
+        ;;
+    esac
+
+}
+complete -o filenames -F _ebook_meta ebook-meta
+
