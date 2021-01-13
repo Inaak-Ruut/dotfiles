@@ -1,0 +1,72 @@
+Getting started with herbstluftwm (hlwm)
+
+1. Read the manual.
+
+2. Default settings:
+
+Mod=mod4
+mod4 key = windows key
+
+Mod-Shift-q - This will take you to the login screen.
+Mod-Shift-b - Reboot
+
+
+Mod-Return - Terminal
+Mod-d - dmenu
+Mod-o - splits the screen horizontally
+
+Full list of keybinds
+
+Mod4+Shift+q	quit
+Mod4+Shift+r	reload
+Mod4+Shift+c	close
+Mod4+Shift+b	spawn	sudo	persist-config	--shutdown	--command	reboot
+Mod4+Return	spawn	urxvt
+Mod4+d	spawn	dmenu_run
+Mod4+F12	spawn	scrot	-t	20	-d	2	/home/demo/%Y-%m-%d-%T-screenshot.png
+Mod4+Shift+Up	spawn	amixer	sset	Master	3.00dB+
+Mod4+Shift+Down	spawn	amixer	sset	Master	3.00dB-
+Mod4+1	use_index	0
+Mod4+Shift+1	move_index	0
+Mod4+2	use_index	1
+Mod4+Shift+2	move_index	1
+Mod4+3	use_index	2
+Mod4+Shift+3	move_index	2
+Mod4+4	use_index	3
+Mod4+Shift+4	move_index	3
+Mod4+5	use_index	4
+Mod4+Shift+5	move_index	4
+Mod4+6	use_index	5
+Mod4+Shift+6	move_index	5
+Mod4+period	use_index	+1	--skip-visible
+Mod4+comma	use_index	-1	--skip-visible
+Mod4+Right	use_index	+1	--skip-visible
+Mod4+Left	use_index	-1	--skip-visible
+Mod4+r	remove
+Mod4+space	cycle_layout	1
+Mod4+u	split	vertical	0.5
+Mod4+Shift+u	split	vertical	0.3
+Mod4+o	split	horizontal	0.5
+Mod4+Shift+o	split	horizontal	0.3
+Mod4+s	floating	toggle
+Mod4+f	fullscreen	toggle
+Mod4+p	pseudotile	toggle
+Mod4+Control+h	resize	left	+0.05
+Mod4+Control+j	resize	down	+0.05
+Mod4+Control+k	resize	up	+0.05
+Mod4+Control+l	resize	right	+0.05
+Mod4+BackSpace	cycle_monitor
+Mod4+Tab	cycle_all	+1
+Mod4+Shift+Tab	cycle_all	-1
+Mod4+c	cycle
+Mod4+h	focus	left
+Mod4+j	focus	down
+Mod4+k	focus	up
+Mod4+l	focus	right
+Mod4+i	jumpto	urgent
+Mod4+Shift+h	shift	left
+Mod4+Shift+j	shift	down
+Mod4+Shift+k	shift	up
+Mod4+Shift+l	shift	right
+
+3. Enjoy!

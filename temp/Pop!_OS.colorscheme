@@ -92,3 +92,24 @@ Description=Pop!_OS
 Opacity=0.7
 Wallpaper=
 
+palette = "#073642:#d30102:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+
+
+
+Hey, this is a bit of a dig, but found this thread while looking for the terminal colors after messing mine up.
+
+Managed to reset mine and the defaults are:
+
+default text: #F2F2F2 | default background: #333333
+
+bold: #73C48F
+
+cursor color text: #49B9C7 | cursor color background: #F6F6F6
+
+highlight color text: #FFFFFF | highlight color background: #48B9C7
+
+palette colors:
+
+0: #333333 1: #CC0000 2: #4E9A06 3: #C4A000 4: #3465A4 5: #75507B 6: #06989A 7: #D3D7CF
+
+8: #88807C 9: #F15D22 10: #73C48F 11: #FFCE51 12: #48B9C7 13: #AD7FA8 14: #34E2E2 15: #EEEEEC
