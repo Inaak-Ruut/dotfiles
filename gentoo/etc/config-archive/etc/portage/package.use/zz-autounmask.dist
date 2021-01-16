@@ -1,0 +1,3 @@
+# package.use# required by sys-boot/os-prober-1.77::gentoo
+# required by sys-boot/os-prober (argument)
+>=sys-boot/grub-2.05_alpha20200310-r1 mount

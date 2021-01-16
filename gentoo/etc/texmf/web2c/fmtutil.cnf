@@ -1,0 +1,9 @@
+# Generated for texlive-basic	by texlive-module.eclass
+luahbtex	luahbtex	language.def,language.dat.lua	luatex.ini
+luatex	luatex	language.def,language.dat.lua	luatex.ini
+dviluatex	luatex	language.def,language.dat.lua	dviluatex.ini
+mf	mf-nowin	-	-translate-file=cp227.tcx mf.ini
+pdftex	pdftex	language.def	-translate-file=cp227.tcx *pdfetex.ini
+etex	pdftex	language.def	-translate-file=cp227.tcx *etex.ini
+pdfetex	pdftex	language.def	-translate-file=cp227.tcx *pdfetex.ini
+tex	tex	-	tex.ini
