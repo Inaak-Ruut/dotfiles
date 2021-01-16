@@ -1,7 +1,15 @@
 #!/bin/sh
 path=$(pwd)
 
-# Home directory
+# Set up the .local directory
+# [ ! -d $HOME/.local ] && mkdir -p $HOME/.local/share
+# [ ! -d $HOME/.local/share ] && mkdir $HOME/.local/share
+# [ -d $HOME/.local/share/applications ] && rm -rf $HOME/.local/share/applications
+# ln -sf $path/.local/share/applications $HOME/.local/share/applications
+# [ -d $HOME/.local/share/fonts ] && rm -r $HOME/.local/share/fonts
+# ln -sf $path/.local/share/fonts $HOME/.local/share/fonts
+
+# Set up the /home directory
 # ln -sf $path/.bash_profile $HOME/.bash_profile
 # ln -sf $path/.bashrc $HOME/.bashrc
 # ln -sf $path/.gitconfig $HOME/.gitconfig
@@ -16,13 +24,7 @@ path=$(pwd)
 # ln -sf $path/.zshenv $HOME/.zshenv
 # ln -sf $path/.zshrc $HOME/.zshrc
 
-# Local directory
-# [ ! -d $HOME/.local ] && mkdir -p $HOME/.local/share
-# [ ! -d $HOME/.local/share ] && mkdir $HOME/.local/share
-# [ -d $HOME/.local/share/applications ] && rm -rf $HOME/.local/share/applications
-# ln -sf $path/.local/share/applications $HOME/.local/share/applications
-# [ -d $HOME/.local/share/fonts ] && rm -r $HOME/.local/share/fonts
-# ln -sf $path/.local/share/fonts $HOME/.local/share/fonts
+
 
 # Config directory
 # [ ! -d $HOME/.config ] && mkdir $HOME/.config

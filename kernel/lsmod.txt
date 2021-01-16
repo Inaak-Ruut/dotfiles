@@ -1,0 +1,162 @@
+Module                  Size  Used by
+ctr                    16384  1
+ccm                    20480  3
+nls_iso8859_1          16384  1
+nls_cp437              20480  1
+vfat                   20480  1
+fat                    81920  1 vfat
+intel_rapl_msr         20480  0
+intel_rapl_common      28672  1 intel_rapl_msr
+x86_pkg_temp_thermal    20480  0
+intel_powerclamp       20480  0
+coretemp               20480  0
+kvm_intel             323584  0
+iwlmvm                331776  0
+kvm                   786432  1 kvm_intel
+iTCO_wdt               16384  0
+irqbypass              16384  1 kvm
+intel_pmc_bxt          16384  1 iTCO_wdt
+mac80211              880640  1 iwlmvm
+at24                   24576  0
+crct10dif_pclmul       16384  1
+snd_hda_codec_realtek   118784  1
+mei_wdt                16384  0
+iTCO_vendor_support    16384  1 iTCO_wdt
+dell_laptop            24576  0
+ghash_clmulni_intel    16384  0
+libarc4                16384  1 mac80211
+mei_hdcp               24576  0
+ppdev                  24576  0
+dell_smm_hwmon         16384  0
+aesni_intel           372736  2
+snd_hda_codec_generic    90112  1 snd_hda_codec_realtek
+crypto_simd            16384  1 aesni_intel
+cryptd                 20480  2 crypto_simd,ghash_clmulni_intel
+dell_wmi               20480  0
+glue_helper            16384  1 aesni_intel
+ledtrig_audio          16384  2 snd_hda_codec_generic,dell_laptop
+snd_hda_codec_hdmi     69632  2
+rapl                   16384  0
+dell_smbios            28672  2 dell_wmi,dell_laptop
+iwlwifi               253952  1 iwlmvm
+intel_cstate           16384  0
+btusb                  57344  0
+snd_soc_rt5640        135168  0
+snd_hda_intel          49152  0
+dcdbas                 20480  1 dell_smbios
+btrtl                  24576  1 btusb
+i2c_i801               36864  0
+snd_intel_dspcfg       20480  1 snd_hda_intel
+btbcm                  20480  1 btusb
+snd_soc_rl6231         20480  1 snd_soc_rt5640
+pcspkr                 16384  0
+psmouse               167936  0
+sparse_keymap          16384  1 dell_wmi
+dell_wmi_descriptor    20480  2 dell_wmi,dell_smbios
+wmi_bmof               16384  0
+i2c_smbus              20480  1 i2c_i801
+snd_hda_codec         135168  4 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec_realtek
+cfg80211              831488  3 iwlmvm,iwlwifi,mac80211
+btintel                28672  1 btusb
+lpc_ich                28672  0
+joydev                 28672  0
+snd_soc_core          266240  1 snd_soc_rt5640
+input_leds             16384  0
+mei_me                 40960  2
+snd_hda_core           90112  5 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek
+mei                   118784  5 mei_wdt,mei_hdcp,mei_me
+snd_compress           28672  1 snd_soc_core
+snd_hwdep              16384  1 snd_hda_codec
+snd_pcm_dmaengine      16384  1 snd_soc_core
+parport_pc             49152  0
+thermal                20480  0
+parport                61440  2 parport_pc,ppdev
+snd_pcm               114688  8 snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_soc_rt5640,snd_compress,snd_soc_core,snd_hda_core,snd_pcm_dmaengine
+dell_smo8800           20480  0
+evdev                  24576  8
+ac97_bus               16384  1 snd_soc_core
+mac_hid                16384  0
+dell_rbtn              20480  1
+ac                     16384  0
+tiny_power_button      16384  0
+snd_seq                81920  0
+snd_seq_device         16384  1 snd_seq
+snd_timer              40960  2 snd_seq,snd_pcm
+snd                    90112  12 snd_hda_codec_generic,snd_seq,snd_seq_device,snd_hda_codec_hdmi,snd_hwdep,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek,snd_timer,snd_compress,snd_soc_core,snd_pcm
+soundcore              16384  1 snd
+vhost_vsock            24576  0
+vmw_vsock_virtio_transport_common    32768  1 vhost_vsock
+vsock                  40960  2 vmw_vsock_virtio_transport_common,vhost_vsock
+vhost_net              32768  0
+vhost                  45056  2 vhost_vsock,vhost_net
+vhost_iotlb            16384  1 vhost
+tap                    28672  1 vhost_net
+uhid                   20480  0
+hci_vhci               16384  0
+bluetooth             626688  6 btrtl,btintel,btbcm,btusb,hci_vhci
+ecdh_generic           16384  1 bluetooth
+rfkill                 24576  6 bluetooth,dell_laptop,dell_rbtn,cfg80211
+ecc                    32768  1 ecdh_generic
+vfio_iommu_type1       36864  0
+vfio                   36864  1 vfio_iommu_type1
+uinput                 20480  0
+userio                 16384  0
+ppp_generic            45056  0
+slhc                   20480  1 ppp_generic
+tun                    57344  1 vhost_net
+loop                   36864  0
+nvram                  16384  0
+btrfs                1458176  0
+blake2b_generic        20480  0
+xor                    24576  1 btrfs
+raid6_pq              118784  1 btrfs
+libcrc32c              16384  1 btrfs
+cuse                   16384  0
+fuse                  151552  1 cuse
+ext4                  819200  2
+crc32c_generic         16384  0
+crc16                  16384  2 bluetooth,ext4
+mbcache                16384  1 ext4
+jbd2                  122880  1 ext4
+sd_mod                 57344  4
+hid_generic            16384  0
+usbkbd                 16384  0
+usbhid                 57344  0
+hid                   135168  3 usbhid,hid_generic,uhid
+i915                 2592768  2
+intel_gtt              24576  1 i915
+i2c_algo_bit           16384  1 i915
+ahci                   40960  3
+libahci                36864  1 ahci
+drm_kms_helper        208896  1 i915
+syscopyarea            16384  1 drm_kms_helper
+sysfillrect            16384  1 drm_kms_helper
+sysimgblt              16384  1 drm_kms_helper
+libata                245760  2 libahci,ahci
+fb_sys_fops            16384  1 drm_kms_helper
+cec                    53248  2 drm_kms_helper,i915
+rc_core                49152  1 cec
+xhci_pci               20480  0
+crc32_pclmul           16384  0
+crc32c_intel           24576  5
+sdhci_pci              65536  0
+xhci_pci_renesas       20480  1 xhci_pci
+scsi_mod              184320  2 sd_mod,libata
+serio_raw              20480  0
+cqhci                  32768  1 sdhci_pci
+xhci_hcd              270336  1 xhci_pci
+ehci_pci               20480  0
+sdhci                  65536  1 sdhci_pci
+drm                   507904  3 drm_kms_helper,i915
+ehci_hcd               94208  1 ehci_pci
+mmc_core              163840  3 sdhci,cqhci,sdhci_pci
+usbcore               270336  7 xhci_hcd,ehci_pci,usbhid,usbkbd,ehci_hcd,btusb,xhci_pci
+agpgart                45056  2 intel_gtt,drm
+wmi                    32768  4 dell_wmi,wmi_bmof,dell_smbios,dell_wmi_descriptor
+battery                20480  0
+video                  49152  3 dell_wmi,dell_laptop,i915
+button                 24576  0
+dm_mirror              28672  0
+dm_region_hash         20480  1 dm_mirror
+dm_log                 20480  2 dm_region_hash,dm_mirror
+dm_mod                139264  2 dm_log,dm_mirror
