@@ -28,13 +28,10 @@
 #LABEL=swap		none		swap		sw		0 0
 #/dev/cdrom		/mnt/cdrom	auto		noauto,ro	0 0
 
-
-
-
-/dev/sda1		/boot			vfat		defaults										1 2
-/dev/sda2		/			ext4		noatime,discard										0 1
-/dev/sda3		/home			ext4		noatime,discard										0 2
-/dev/sda6		/mnt/lfs		ext4		noatime,discard										1 1
-/dev/sda7		none			swap		sw											0 0
-tmpfs			/var/tmp		tmpfs		rw,nosuid,noatime,nodev,size=1G,mode=1777						0 0
-tmpfs			/var/tmp/portage	tmpfs		rw,nosuid,noatime,nodev,size=15G,mode=775,uid=portage,gid=portage,x-mount.mkdir=775	0 0
+/dev/sda1		/boot/efi				vfat		defaults																			1 2
+/dev/sda2		/						ext4		noatime,discard																		0 1
+/dev/sda3		/home					ext4		noatime,discard																		0 2
+/dev/sda6		/mnt/lfs				ext4		noatime,discard																		1 1
+/dev/sda7		none					swap		sw																					0 0
+tmpfs			/var/tmp				tmpfs		rw,nosuid,noatime,nodev,size=1G,mode=1777											0 0
+tmpfs			/var/tmp/portage		tmpfs		rw,nosuid,noatime,nodev,size=15G,mode=775,uid=portage,gid=portage,x-mount.mkdir=775	0 0
