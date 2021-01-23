@@ -1,0 +1,206 @@
+ii LuaJIT-2.1.0beta3_1                       Just-In-Time Compiler for Lua
+ii NetworkManager-1.22.10_2                  Network Management daemon
+ii acl-2.2.53_1                              Access Control List filesystem support
+ii acpid-2.0.32_1                            The ACPI Daemon (acpid) With Netlink Support
+ii attr-2.4.48_1                             Extended attribute support library for ACL support
+ii base-files-0.141_5                        Void Linux base system files
+ii base-system-0.114_1                       Void Linux base system meta package
+ii bash-5.1.004_1                            GNU Bourne Again Shell
+ii binutils-2.35.1_3                         GNU binary utilities
+ii binutils-doc-2.35.1_3                     GNU binary utilities - info files
+ii bluez-5.55_1                              Bluetooth tools and daemons
+ii btrfs-progs-5.9_1                         Btrfs filesystem utilities
+ii bzip2-1.0.8_1                             Freely available, patent free, high-quality data compressor
+ii c-ares-1.17.1_1                           C library that performs DNS requests and name resolves asynchronously
+ii ca-certificates-20200601_2                Common CA certificates for SSL/TLS
+ii coreutils-8.32_4                          GNU core utilities
+ii cpio-2.13_1                               GNU copy-in/out (cpio) with remote magnetic tape (rmt) support
+ii curl-7.74.0_1                             Client that groks URLs
+ii dash-0.5.11.2_1                           POSIX-compliant Unix shell, much smaller than GNU bash
+ii dbus-1.12.20_1                            Message bus system
+ii dbus-libs-1.12.20_1                       Message bus system - shared libraries
+ii device-mapper-2.02.187_2                  Device Mapper userspace library and tools
+ii dhcpcd-9.3.4_2                            RFC2131 compliant DHCP client
+ii diffutils-3.7_1                           The GNU diff utilities
+ii dnssec-anchors-20181012_2                 DNSSEC trust anchors for the root zone
+ii dosfstools-4.1_2                          DOS filesystem tools
+ii dracut-050_9                              Low-level tool for generating an initramfs/initrd image
+ii e2fsprogs-1.45.6_1                        Ext2/3/4 Filesystem Utilities
+ii e2fsprogs-libs-1.45.6_1                   Ext2/3/4 Filesystem Utilities - shared libraries
+ii ethtool-5.10_1                            Utility for controlling network drivers and hardware
+ii eudev-3.2.9_1                             Gentoo's fork of systemd-udev (enhanced userland device daemon)
+ii eudev-libudev-3.2.9_1                     Gentoo's fork of systemd-udev (enhanced userland device daemon) - runtime library
+ii expat-2.2.10_1                            XML parser library written in C
+ii f2fs-tools-1.14.0_1                       Tools for the Linux Flash-Friendly File System (F2FS)
+ii file-5.39_1                               File type identification utility
+ii findutils-4.7.0_1                         GNU Find Utilities
+ii font-alias-1.0.4_2                        Standard aliases for X11 PCF fonts
+ii font-util-1.3.2_1                         Tools for truncating and subseting of ISO10646-1 BDF fonts
+ii fontconfig-2.13.1_3                       Library for configuring and customizing font access
+ii freetype-2.10.4_2                         Font rendering engine and library API
+ii gawk-5.1.0_1                              GNU awk utility
+ii gcc-10.2.1pre1_2                          GNU Compiler Collection
+ii gdbm-1.18.1_1                             GNU database routines
+ii git-2.30.0_1                              Git Tree History Storage Tool
+ii glib-2.66.2_1                             GNU library of C routines
+ii glibc-2.30_2                              GNU C library
+ii glibc-devel-2.30_2                        GNU C library - development files
+ii glibc-locales-2.30_2                      GNU C library - locale data files
+ii gmp-6.2.1_1                               Library for arbitrary precision arithmetic
+ii grep-3.6_1                                GNU grep utility
+ii gzip-1.10_1                               GNU compression utility (replacement for compress)
+ii hwids-20201207_1                          Hardware Identification Databases
+ii iana-etc-20210106_1                       Unix /etc/services and /etc/protocols files
+ii icu-libs-67.1_1                           Robust and fully-featured Unicode libraries - shared libs
+ii inih-52_1                                 Simple ini file parser library
+ii iproute2-5.9.0_2                          IP Routing Utilities
+ii iptables-1.8.6_2                          Linux IPv[46] packet filtering ruleset
+ii iputils-20190709_3                        Useful utilities for Linux networking (including ping)
+ii ipw2100-firmware-1.3_6                    Firmware for the Intel PRO/Wireless 2100 wifi cards
+ii ipw2200-firmware-3.1_6                    Firmware for the Intel PRO/Wireless 2200BG wifi cards
+ii iw-5.9_1                                  Utility for nl80211 based CLI configuration of wireless devices
+ii jansson-2.13.1_1                          Library for encoding, decoding and manipulating JSON data
+ii kbd-2.3.0_2                               Linux keyboard utilities
+ii kbd-data-2.3.0_2                          Linux keyboard utilities - keymaps, console fonts and unicode maps
+ii kernel-libc-headers-5.10.4_1              Linux API headers for userland development
+ii kmod-27_2                                 Linux kernel module handling
+ii kpartx-0.8.5_1                            Create device maps from partition tables
+ii less-563_1                                Pager program similar to more(1)
+ii libaio-0.3.112_1                          The Linux-native asynchronous I/O facility (aio) library
+ii libarchive-3.5.1_1                        Library to read/write several different streaming archive formats
+ii libblkid-2.36_1                           Library to handle device identification
+ii libcap-2.46_1                             POSIX.1e capabilities suite
+ii libcap-ng-0.8.2_1                         Alternate POSIX capabilities library
+ii libcap-progs-2.46_1                       POSIX.1e capabilities suite - utilities
+ii libcrypto46-3.1.5_2                       Version of the TLS/crypto stack forked from OpenSSL - crypto library
+ii libcurl-7.74.0_1                          Multiprotocol file transfer library
+ii libdb-5.3.28_8                            Berkeley DB embedded database system - C shared libraries
+ii libdebuginfod-0.182_4                     Utilities to handle ELF object files - debuginfod library
+ii libedit-20191231.3.1_1                    Port of the NetBSD Command Line Editor Library
+ii libelf-0.182_4                            Utilities to handle ELF object files - runtime library
+ii libelogind-243.4_3                        Standalone logind fork - elogind library
+ii libev-4.33_1                              High-performance event loop loosely modelled after libevent
+ii libfdisk-2.36_1                           Library for fdisk(8)
+ii libffi-3.3_2                              Library supporting Foreign Function Interfaces
+ii libfontenc-1.1.4_1                        Fontenc Library from X.org
+ii libgcc-10.2.1pre1_2                       GNU Compiler Collection - GCC library
+ii libgcc-devel-10.2.1pre1_2                 GNU Compiler Collection - GCC library - development files
+ii libical-3.0.8_3                           Reference implementation of the iCalendar data type and format
+ii libkmod-27_2                              Linux kernel module handling - runtime shared library
+ii libldns-1.7.1_3                           Modern DNS/DNSSEC library
+ii libluv-1.36.0.0_1                         Bare libuv bindings for LuaJIT
+ii liblz4-1.9.3_1                            LZ4 compression library
+ii liblzma-5.2.5_1                           XZ-format compression library
+ii libmagic-5.39_1                           File type identification library
+ii libmm-glib-1.14.8_1                       Mobile broadband modem management service - GLib library
+ii libmnl-1.0.4_2                            Minimalistic user-space library oriented to Netlink developers
+ii libmount-2.36_1                           Library for mount(8)
+ii libndp-1.7_1                              Library for Neighbor Discovery Protocol
+ii libnetfilter_conntrack-1.0.8_1            Library providing an API to the in-kernel connection tracking table
+ii libnfnetlink-1.0.1_4                      Low-level library for netfilter kernel/userspace communication
+ii libnftnl-1.1.9_1                          Low-level netlink interface to nf_tables
+ii libnl3-3.5.0_1                            Netlink Protocol Library Suite
+ii libnm-1.22.10_2                           Network Management daemon - shared libraries
+ii libpcap-1.10.0_1                          System-independent interface for user-level packet capture
+ii libpcre-8.44_1                            Perl Compatible Regular Expressions - shared libraries
+ii libpcre2-10.35_1                          Perl Compatible Regular Expressions (2nd version) - shared libraries
+ii libpng-1.6.37_1                           Library for manipulating PNG images
+ii libpsl-0.21.1_1                           Public Suffix List library functions
+ii libreadline8-8.1.000_1                    GNU Readline Library
+ii libressl-3.1.5_2                          Version of the TLS/crypto stack forked from OpenSSL
+ii libsmartcols-2.36_1                       Table or Tree library from util-linux
+ii libssh2-1.9.0_2                           Library implementing the SSH2 protocol
+ii libssl48-3.1.5_2                          Version of the TLS/crypto stack forked from OpenSSL - SSL/TLS library
+ii libssp-10.2.1pre1_1                       GNU Compiler Collection - SSP (StackSmashingProtection) library
+ii libssp-devel-10.2.1pre1_2                 GNU Compiler Collection - SSP (StackSmashingProtection) library - development files
+ii libstdc++-10.2.1pre1_2                    GNU Compiler Collection - Standard C++ Library
+ii libstdc++-devel-10.2.1pre1_2              GNU Compiler Collection - Standard C++ Library - development files
+ii libtermkey-0.22_1                         Library for processing keyboard entry from terminal-based programs
+ii libtls20-3.1.5_2                          Version of the TLS/crypto stack forked from OpenSSL - new TLS library
+ii libusb-1.0.23_1                           Library which allows userspace access to USB devices
+ii libuuid-2.36_1                            UUID library
+ii libuv-1.39.0_1                            Multi-platform support library with a focus on asynchronous I/O
+ii libvterm-0.1.4_1                          Abstract VT220/xterm/ECMA-48 emulation library
+ii libxbps-0.59.1_2                          XBPS package system utilities - runtime library
+ii libzstd-1.4.8_1                           Fast real-time compression algorithm
+ii linux-5.10_1                              Linux kernel meta package
+ii linux-firmware-amd-20201218_2             Binary firmware blobs for the Linux kernel - AMD CPU/GPU microcode
+ii linux-firmware-broadcom-20201218_2        Binary firmware blobs for the Linux kernel - Broadcom network blobs
+ii linux-firmware-intel-20201218_2           Binary firmware blobs for the Linux kernel - Intel CPU/GPU microcode
+ii linux-firmware-network-20201218_2         Binary firmware blobs for the Linux kernel - network
+ii linux-firmware-nvidia-20201218_2          Binary firmware blobs for the Linux kernel NVIDIA GPU microcode
+ii linux-headers-5.10_1                      Linux kernel headers meta package
+ii linux5.10-5.10.9_1                        Linux kernel and modules (5.10 series)
+ii linux5.10-headers-5.10.8_1                Linux kernel and modules (5.10 series) - source headers for 3rd party modules
+ii lzo-2.10_2                                Portable lossless data compression library
+ii m4-1.4.18_2                               GNU version of UNIX m4 macro language processor
+ii make-4.3_3                                GNU Make build tool
+ii man-pages-5.10_1                          Linux Documentation Project (LDP) manual pages
+ii mdocml-1.14.5_6                           UNIX manpage compiler toolset (mandoc)
+ii mkfontscale-1.2.1_2                       X11 Scalable Font Index Generator
+ii mobile-broadband-provider-info-20190618_2 Database of mobile broadband service providers
+ii mozjs60-60.8.0_5                          Mozilla JavaScript interpreter and library (60.x series)
+ii msgpack-3.3.0_1                           Binary-based efficient object serialization library
+ii ncurses-6.2_4                             System V Release 4.0 curses emulation library
+ii ncurses-base-6.2_4                        System V Release 4.0 curses emulation library - base terminfo files
+ii ncurses-devel-6.2_4                       System V Release 4.0 curses emulation library - development files
+ii ncurses-libs-6.2_4                        System V Release 4.0 curses emulation library -- shared libraries
+ii neovim-0.4.4_1                            Fork of Vim aiming to improve user experience, plugins and GUIs
+ii newt-0.52.21_3                            Library for color text mode, widget based user interfaces
+ii nghttp2-1.42.0_1                          HTTP/2 C Library
+ii nspr-4.29_1                               NetScape Portable Runtime
+ii nss-3.60.1_1                              Mozilla Network Security Services
+ii nvi-1.81.6_16                             The Berkeley Vi Editor
+ii oniguruma-6.9.5.rev1_1                    Multi-charset regular expressions library
+ii openresolv-3.12.0_1                       Management framework for resolv.conf
+ii openssh-8.4p1_3                           OpenSSH free Secure Shell (SSH) client and server implementation
+ii pam-1.5.1_1                               Flexible mechanism for authenticating users
+ii pam-base-0.4_1                            PAM base configuration files
+ii pam-libs-1.5.1_1                          Flexible mechanism for authenticating users - runtime libraries
+ii patch-2.7.6_4                             Patch files using diff output
+ii pciutils-3.7.0_1                          PCI bus related utilities
+ii perl-5.32.0_1                             Practical Extraction and Report Language
+ii perl-Authen-SASL-2.16_4                   Authen::SASL -- SASL authentication framework
+ii perl-Convert-BinHex-1.125_3               Perl module to extract data from Macintosh BinHex files
+ii perl-IO-Socket-SSL-2.068_2                IO::Socket::SSL -- SSL sockets with IO::Socket interface
+ii perl-IO-stringy-2.113_2                   IO::stringy -- I/O on in-core objects like strings/arrays
+ii perl-MIME-tools-5.509_3                   MIME-tools -- Parses streams to create MIME entities
+ii perl-MailTools-2.21_2                     MailTools -- Various e-mail related modules
+ii perl-Net-SMTP-SSL-1.04_2                  Net::SMTP::SSL -- SSL support for Net::SMTP
+ii perl-Net-SSLeay-1.88_5                    Net::SSLeay - Perl extension for using OpenSSL
+ii perl-TimeDate-2.33_2                      TimeDate -- Date formating subroutines
+ii perl-URI-5.05_1                           Perl Uniform Resource Identifiers class (URI, RFC 2396)
+ii pkg-config-0.29.2_2                       System for managing library compile/link flags
+ii polkit-0.116_3                            Authorization Toolkit
+ii popt-1.18_1                               Command line option parsing library
+ii procps-ng-3.3.16_1                        Utilities for monitoring your system and its processes
+ii removed-packages-0.1_11                   Uninstalls packages removed from repository
+ii run-parts-4.11.2_1                        Run scripts or programs in a directory
+ii runit-2.1.2_11                            A UNIX init scheme with service supervision
+ii runit-void-20200720_1                     Void Linux runit scripts
+ii sed-4.8_1                                 The GNU stream editor
+ii shadow-4.8.1_1                            Shadow password file utilities
+ii slang-2.3.2_2                             S-Lang programming library
+ii spdx-licenses-list-3.11_1                 SPDX License List
+ii sqlite-3.34.0_1                           SQL Database Engine in a C Library
+ii sudo-1.9.5p1_1                            Allow others to run commands as root
+ii tar-1.32_3                                GNU tape archiver with remote magnetic tape support
+ii terminus-font-4.49.1_1                    Clean, fixed width bitmap font
+ii traceroute-2.1.0_3                        Traces the route taken by packets over an IPv4/IPv6 network
+ii tzdata-2020d_1                            Time zone and daylight-saving time data
+ii unibilium-2.0.0_1                         A simple, self-contained terminfo library
+ii usbutils-013_1                            Linux USB utilities
+ii util-linux-2.36_1                         Miscellaneous linux utilities
+ii util-linux-libs-2.36_1                    Miscellaneous linux utilities - meta libraries
+ii void-artwork-20170517_3                   Void Linux artwork
+ii which-2.21_3                              Displays where a particular program in your path is located
+ii wifi-firmware-1.3_4                       WiFi firmware meta-package
+ii wpa_supplicant-2.9_3                      WPA/WPA2/IEEE 802.1X Supplicant
+ii xbps-0.59.1_2                             XBPS package system utilities
+ii xbps-triggers-0.118_1                     XBPS triggers for Void Linux
+ii xfsprogs-5.10.0_1                         Utilities for managing the XFS filesystem
+ii xtools-0.62_1                             Opinionated helpers for working with XBPS
+ii xz-5.2.5_1                                The XZ compression utilities
+ii zd1211-firmware-1.5_3                     Firmware for the Zydas 1211 wifi cards
+ii zlib-1.2.11_3                             A compression/decompression Library
+ii zsh-5.8_2                                 Z SHell
