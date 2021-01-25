@@ -5,10 +5,17 @@ cd "$(xdistdir)"
 ./xbps-src pkg binutils && sudo xi -f binutils
 ./xbps-src pkg gcc && sudo xi -f gcc
 ./xbps-src pkg kernel-headers && sudo xi -f kernel-headers
+./xbps-src pkg glibc-devel && sudo xi -f glibc-devel
+./xbps-src pkg glibc-locales && sudo xi -f glibc-locales
 ./xbps-src pkg glibc && sudo xi -f glibc
-./xbps-src pkg libstdc++ && sudo xi -f libstdc++
+./xbps-src pkg libstdc++-devel && sudo xi -f libstdc++-devel
+./xbps-src pkg libstdc++-devel && sudo xi -f libstdc++
 ./xbps-src pkg m4 && sudo xi -f m4
+./xbps-src pkg ncurses-libs && sudo xi -f ncurses-libs
+./xbps-src pkg ncurses-devel && sudo xi -f ncurses-devel
 ./xbps-src pkg ncurses && sudo xi -f ncurses
+./xbps-src pkg ncurses-libtinfo-libs && sudo xi -f ncurses-libtinfo-libs
+./xbps-src pkg ncurses-libtinfo-devel && sudo xi -f ncurses-libtinfo-devel
 ./xbps-src pkg dash && sudo xi -f dash
 ./xbps-src pkg bash && sudo xi -f bash
 ./xbps-src pkg zsh && sudo xi -f zsh
@@ -34,6 +41,7 @@ cd "$(xdistdir)"
 ./xbps-src pkg perl && sudo xi -f perl
 ./xbps-src pkg python && sudo xi -f python
 ./xbps-src pkg texinfo && sudo xi -f texinfo
+./xbps-src pkg util-linux-libs && sudo xi -f util-linux-libs
 ./xbps-src pkg util-linux && sudo xi -f util-linux
 ./xbps-src pkg man-pages && sudo xi -f man-pages
 ./xbps-src pkg tcl && sudo xi -f tcl
@@ -47,7 +55,6 @@ cd "$(xdistdir)"
 ./xbps-src pkg file && sudo xi -f file
 ./xbps-src pkg readline && sudo xi -f readline
 ./xbps-src pkg m4 && sudo xi -f m4
-./xbps-src pkg bc && sudo xi -f bc
 ./xbps-src pkg flex && sudo xi -f flex
 ./xbps-src pkg binutils && sudo xi -f binutils
 ./xbps-src pkg gmp && sudo xi -f gmp

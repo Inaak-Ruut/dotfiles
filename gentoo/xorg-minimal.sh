@@ -21,7 +21,7 @@ x11-misc/lightdm-gtk-greeter \
 x11-misc/lightdm-webkit2-greeter \
 x11-wm/bspwm \
 x11-wm/i3-gaps \
-x11-misc/i3lock \
+x11-misc/i3lock-color \
 x11-misc/polybar \
 x11-wm/awesome \
 media-sound/alsa-utils \

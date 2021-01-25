@@ -27,7 +27,61 @@ path=$(pwd)
 
 
 # Config directory
-# [ ! -d $HOME/.config ] && mkdir $HOME/.config
+[ ! -d $HOME/.config ] && mkdir $HOME/.config
+
+[ -d $HOME/.config/alacritty ] && rm -rf $HOME/.config/alacritty
+ln -sf $path/config/alacritty $HOME/.config/alacritty
+
+[ -d $HOME/.config/bspwm ] && rm -rf $HOME/.config/bspwm
+ln -sf $path/config/bspwm $HOME/.config/bspwm
+
+[ -d $HOME/.config/dunst ] && rm -rf $HOME/.config/dunst
+ln -sf $path/config/dunst $HOME/.config/dunst
+
+[ -d $HOME/.config/gtk-2.0 ] && rm -rf $HOME/.config/gtk-2.0
+ln -sf $path/config/gtk-2.0 $HOME/.config/gtk-2.0
+
+[ -d $HOME/.config/gtk-3.0 ] && rm -rf $HOME/.config/gtk-3.0
+ln -sf $path/config/gtk-3.0 $HOME/.config/gtk-3.0
+
+# [ -d $HOME/.config/i3 ] && rm -rf $HOME/.config/i3
+# ln -sf $path/config/i3 $HOME/.config/i3
+
+# [ -d $HOME/.config/i3blocks ] && rm -rf $HOME/.config/i3blocks
+# ln -sf $path/config/i3blocks $HOME/.config/i3blocks
+
+# [ -d $HOME/.config/lf ] && rm -rf $HOME/.config/lf
+# ln -sf $path/config/lf $HOME/.config/lf
+
+# [ -d $HOME/.config/mpv ] && rm -rf $HOME/.config/mpv
+# ln -sf $path/config/mpv $HOME/.config/mpv
+
+# [ -d $HOME/.config/neofetch ] && rm -rf $HOME/.config/neofetch
+# ln -sf $path/config/neofetch $HOME/.config/neofetch
+
+# [ -d $HOME/.config/shell ] && rm -rf $HOME/.config/shell
+# ln -sf $path/config/shell $HOME/.config/shell
+
+# [ -d $HOME/.config/sxhkd ] && rm -rf $HOME/.config/sxhkd
+# ln -sf $path/config/sxhkd $HOME/.config/sxhkd
+
+# [ -d $HOME/.config/zathura ] && rm -rf $HOME/.config/zathura
+# ln -sf $path/config/zathura/ $HOME/.config/zathura/
+
+# [ -d $HOME/.config/nvim ] && rm -rf $HOME/.config/nvim
+# ln -sf $path/config/nvim $HOME/.config/nvim
+
+# [ -d $HOME/.config/pistol ] && rm -rf $HOME/.config/pistol
+# ln -sf $path/config/pistol $HOME/.config/pistol
+
+# [ -d $HOME/.config/polybar ] && rm -rf $HOME/.config/polybar
+# ln -sf $path/config/polybar $HOME/.config/polybar
+
+
+
+
+
+
 
 # [ ! -d $HOME/.config/GIMP ] && mkdir -p $HOME/.config/GIMP/2.10
 # [ ! -d $HOME/.config/GIMP/2.10 ] && mkdir $HOME/.config/GIMP/2.10
@@ -51,11 +105,9 @@ path=$(pwd)
 # ln -sf $path/config/VSCodium/keybindings.json $HOME/.config/VSCodium/User/keybindings.json
 # ln -sf $path/config/VSCodium/settings.json $HOME/.config/VSCodium/User/settings.json
 
-# [ -d $HOME/.config/alacritty ] && rm -rf $HOME/.config/alacritty
-# ln -sf $path/config/alacritty $HOME/.config/alacritty
+
 
 # [ -d $HOME/.config/bookmenu ] && rm -rf $HOME/.config/bookmenu
-# ln -sf $path/config/blender $HOME/.config/blender
 
 # [ -d $HOME/.config/bookmenu ] && rm -rf $HOME/.config/bookmenu
 # ln -sf $path/config/bookmenu $HOME/.config/bookmenu
@@ -63,8 +115,7 @@ path=$(pwd)
 # [ -d $HOME/.config/broot ] && rm -rf $HOME/.config/broot
 # ln -sf $path/config/broot $HOME/.config/broot
 
-# [ -d $HOME/.config/bspwm ] && rm -rf $HOME/.config/bspwm
-# ln -sf $path/config/bspwm $HOME/.config/bspwm
+
 
 # [ -d $HOME/.config/btops ] && rm -rf $HOME/.config/btops
 # ln -sf $path/config/btops $HOME/.config/btops
@@ -81,23 +132,12 @@ path=$(pwd)
 # [ -d $HOME/.config/Dharkael ] && rm -rf $HOME/.config/Dharkael
 # ln -sf $path/config/Dharkael $HOME/.config/Dharkael
 
-# [ -d $HOME/.config/dunst ] && rm -rf $HOME/.config/dunst
-# ln -sf $path/config/dunst $HOME/.config/dunst
 
-# [ -d $HOME/.config/gtk-2.0 ] && rm -rf $HOME/.config/gtk-2.0
-# ln -sf $path/config/gtk-2.0 $HOME/.config/gtk-2.0
-
-# [ -d $HOME/.config/gtk-3.0 ] && rm -rf $HOME/.config/gtk-3.0
-# ln -sf $path/config/gtk-3.0 $HOME/.config/gtk-3.0
 
 # [ -d $HOME/.config/hunter ] && rm -rf $HOME/.config/hunter
 # ln -sf $path/config/hunter $HOME/.config/hunter
 
-# [ -d $HOME/.config/i3 ] && rm -rf $HOME/.config/i3
-# ln -sf $path/config/i3 $HOME/.config/i3
 
-# [ -d $HOME/.config/i3blocks ] && rm -rf $HOME/.config/i3blocks
-# ln -sf $path/config/i3blocks $HOME/.config/i3blocks
 
 # [ -d $HOME/.config/import ] && rm -rf $HOME/.config/import
 # ln -sf $path/config/import $HOME/.config/import
@@ -105,14 +145,7 @@ path=$(pwd)
 # [ -d $HOME/.config/kitty ] && rm -rf $HOME/.config/kitty
 # ln -sf $path/config/kitty $HOME/.config/kitty
 
-# [ -d $HOME/.config/lf ] && rm -rf $HOME/.config/lf
-# ln -sf $path/config/lf $HOME/.config/lf
 
-# [ -d $HOME/.config/mpv ] && rm -rf $HOME/.config/mpv
-# ln -sf $path/config/mpv $HOME/.config/mpv
-
-# [ -d $HOME/.config/neofetch ] && rm -rf $HOME/.config/neofetch
-# ln -sf $path/config/neofetch $HOME/.config/neofetch
 
 # [ -d $HOME/.config/newsboat ] && rm -rf $HOME/.config/newsboat
 # ln -sf $path/config/newsboat $HOME/.config/newsboat
@@ -120,17 +153,12 @@ path=$(pwd)
 # [ -d $HOME/.config/broot ] && rm -rf $HOME/.config/broot
 # ln -sf $path/config/broot $HOME/.config/broot
 
-# [ -d $HOME/.config/nvim ] && rm -rf $HOME/.config/nvim
-# ln -sf $path/config/nvim $HOME/.config/nvim
+
 
 # [ -d $HOME/.config/pcmanfm ] && rm -rf $HOME/.config/pcmanfm
 # ln -sf $path/config/pcmanfm $HOME/.config/pcmanfm
 
-# [ -d $HOME/.config/pistol ] && rm -rf $HOME/.config/pistol
-# ln -sf $path/config/pistol $HOME/.config/pistol
 
-# [ -d $HOME/.config/polybar ] && rm -rf $HOME/.config/polybar
-# ln -sf $path/config/polybar $HOME/.config/polybar
 
 # [ -d $HOME/.config/powerline-shell ] && rm -rf $HOME/.config/powerline-shell
 # ln -sf $path/config/powerline-shell $HOME/.config/powerline-shell
@@ -141,11 +169,7 @@ path=$(pwd)
 # [ -d $HOME/.config/search ] && rm -rf $HOME/.config/search
 # ln -sf $path/config/search $HOME/.config/search
 
-# [ -d $HOME/.config/shell ] && rm -rf $HOME/.config/shell
-# ln -sf $path/config/shell $HOME/.config/shell
 
-# [ -d $HOME/.config/sxhkd ] && rm -rf $HOME/.config/sxhkd
-# ln -sf $path/config/sxhkd $HOME/.config/sxhkd
 
 # [ -d $HOME/.config/tabdmenu ] && rm -rf $HOME/.config/tabdmenu
 # ln -sf $path/config/tabdmenu $HOME/.config/tabdmenu
@@ -162,8 +186,7 @@ path=$(pwd)
 # [ -d $HOME/.config/yay ] && rm -rf $HOME/.config/yay
 # ln -sf $path/config/yay/ $HOME/.config/yay/
 
-# [ -d $HOME/.config/zathura ] && rm -rf $HOME/.config/zathura
-# ln -sf $path/config/zathura/ $HOME/.config/zathura/
+
 
 # ln -sf $path/config/compton.conf $HOME/.config/compton.conf
 # ln -sf $path/config/dolphinrc $HOME/.config/dolphinrc
