@@ -24,6 +24,7 @@ x11-wm/i3-gaps \
 x11-misc/i3lock-color \
 x11-misc/polybar \
 x11-wm/awesome \
+net-news/newsboat \
 media-sound/alsa-utils \
 media-sound/mpd \
 media-fonts/fontawesome \
