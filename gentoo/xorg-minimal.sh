@@ -8,7 +8,7 @@ x11-libs/libXinerama \
 x11-libs/libXft \
 x11-apps/xrdb \
 x11-apps/xrandr \
-x11-drivers/nvidia \
+x11-drivers/nvidia-drivers \
 app-shells/dash \
 app-shells/zsh \
 x11-terms/kitty \
@@ -18,7 +18,7 @@ x11-misc/picom \
 x11-misc/lightdm \
 x11-misc/sxhkd \
 x11-misc/lightdm-gtk-greeter \
-x11-misc/lightdm-webkit2-greeter \
+# x11-misc/lightdm-webkit2-greeter \
 x11-wm/bspwm \
 x11-wm/i3-gaps \
 x11-misc/i3lock-color \
